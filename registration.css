@@ -1,0 +1,186 @@
+* {
+    margin: 0;
+    padding: 0%;
+}
+
+body {
+    background-image: url(bg-intro-desktop.png);
+    background-color: hsl(0, 100%, 74%);
+    color: aliceblue;
+    margin: auto;
+
+}
+
+/*before my table*/
+.btable {
+    width: 100vh
+}
+
+main {
+    display: flex;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+    padding: 10%;
+    width: 100vh;
+}
+
+/* my table*/
+.table {
+    width: 100%
+}
+
+.table button {
+    width: 100%;
+    margin-bottom: 20px;
+}
+
+table {
+    background-color: white;
+    padding: 20px;
+    margin: auto;
+    text-align: center;
+}
+
+table p {
+    color: hsl(246, 32%, 49%);
+}
+
+
+/*button inside the table*/
+#b2 {
+    background: hsl(154, 59%, 51%);
+    border: none;
+    border-radius: 5px;
+    border-radius: 5px;
+    padding: 5px
+}
+
+/*button outside the table*/
+#b1 {
+    background: hsl(248, 32%, 49%);
+    border: none;
+    border-radius: 5px;
+    color: white;
+    padding: 5px
+}
+
+/* inside the table*/
+input {
+    padding-bottom: 10px;
+    width: 90%;
+    margin: 20px;
+    background-color: white;
+}
+
+td {
+    margin-right: 10px;
+}
+
+
+
+input:active {
+    border-color: none;
+}
+
+
+a {
+    text-decoration: none;
+    color: hsl(0, 100%, 74%);
+}
+
+/*vinvalid section*/
+.container[data-error] .input:invalid {
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+    background: white;
+}
+
+.container[data-erro] .input2:invalid {
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+    background: white;
+}
+
+p {
+    font-family: 'Lexend Deca', sans-serif;
+    font-weight: 400;
+}
+
+h1 {
+    font-family: 'Big Shoulders Display', cursive;
+    font-weight: 700;
+}
+
+.container[data-err] .input3:invalid {
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+    background: white;
+}
+
+.container[data-er] .input4:invalid {
+    border-color: hsl(0, 100%, 74%);
+    color: hsl(0, 100%, 74%);
+    background: white;
+}
+
+.container[data-error].input:invalid ::after {
+    content: attr(data-error);
+}
+
+/*media styling*/
+@media only screen and (max-width:750px) {
+    main {
+        display: block;
+    }
+
+    .btable {
+        width: 100%;
+        margin: 0px;
+    }
+
+    body {
+        background-color: hsl(0, 100, 74%);
+        color: aliceblue;
+
+    }
+
+    .btable {
+        width: 100%
+    }
+
+    @media only screen and (max-width:500px) {
+        main {
+            display: block;
+
+        }
+
+        .btable {
+            width: 100%
+        }
+
+        body {
+            background-color: hsl(0, 100%, 74%);
+            color: aliceblue;
+        }
+
+
+    }
+}
+
+@media screen and (max-width:375px) {
+    body {
+        background-image: (url(bg-intro-mobile.png));
+        ;
+    }
+
+    .btable {
+        position: center;
+        width: 100%;
+    }
+
+    main {
+        width: fit-content;
+        margin: auto;
+    }
+}
